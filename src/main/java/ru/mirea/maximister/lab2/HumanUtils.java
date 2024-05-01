@@ -9,21 +9,6 @@ import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
-/**
- * <p>
- * приложение, которое создает список из объектов класса Human, а
- * затем производит действия в соответствии с вариантом индивидуального
- * задания (список после каждого этапа должен выводиться в консоль.
- * </p>
- * <p>
- * Вариант 6.
- * </p>
- * <p>
- * Уменьшение веса каждого объекта на 5, фильтрация по дате
- * рождения меньшей, чем 3 февраля 1999, конкатенация фамилий в строку через
- * пробел.
- * </p>
- */
 public class HumanUtils {
     private static final List<String> FIRST_NAMES;
     private static final List<String> SECOND_NAMES;
@@ -70,7 +55,7 @@ public class HumanUtils {
 
     public static List<Human> decreaseWeight(List<Human> humans) {
         return humans.stream()
-                .peek(h -> h.setWeight(h.getWeight() > 5? h.getWeight() - 5 : 0))
+                .peek(h -> h.setWeight(h.getWeight() > 5 ? h.getWeight() - 5 : 0))
                 .collect(Collectors.toList());
     }
 
@@ -83,7 +68,7 @@ public class HumanUtils {
     public static String concatLastNames(List<Human> humans) {
         return humans.stream()
                 .map(Human::getLastName)
-                .collect( Collectors.joining( " " ) );
+                .collect(Collectors.joining(" "));
 
     }
 }

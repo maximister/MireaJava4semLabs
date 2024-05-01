@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-/**
- * 6) Имплементировать интерфейс Comparator, сравнивающий двух
- * студентов по набранным за семестр баллов.
- */
 
 public class StudentScoreComparator implements Comparator<Student> {
     @Override
@@ -29,6 +25,6 @@ public class StudentScoreComparator implements Comparator<Student> {
         ));
 
         students.sort(new StudentScoreComparator());
-        for (var s: students) System.out.println(s);
-        }
+        for (var s : students) System.out.println(s);
+    }
 }
