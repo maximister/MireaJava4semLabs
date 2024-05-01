@@ -1,0 +1,13 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+spring:
+    application:
+        name: task11-15
+
+student:
+    name: Maxim
+    last-name: Revenko
+    group: IKBO-16-22
