@@ -11,9 +11,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/posts")
-@AllArgsConstructor
 public class PostController {
     private final PostService postService;
+
+    public PostController(PostService postService) {
+        this.postService = postService;
+    }
 
     @GetMapping
     public List<PostResponse> getPosts() {
@@ -33,5 +36,10 @@ public class PostController {
     @GetMapping("/{id}")
     public PostResponse getPost(@PathVariable Long id) {
         return postService.getPost(id);
+    }
+
+    @GetMapping("/filtered")
+    public List<PostResponse> getPostByFilter(@RequestParam String filteredBy, @RequestParam String value) {
+        return postService.getPostsByFilter(filteredBy, value);
     }
 }

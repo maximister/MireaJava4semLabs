@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Repository("InMemoryUserRepo")
 public class InMemoryUserRepo implements UserRepository {
     private List<User> users = new ArrayList<>();
     private long ID = 0;

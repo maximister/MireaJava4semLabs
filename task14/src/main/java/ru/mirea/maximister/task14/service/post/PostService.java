@@ -11,4 +11,7 @@ public interface PostService {
     PostResponse getPost(Long id);
     void addPost(AddPostRequest addPostRequest);
     void deletePost(RemovePostRequest request);
+
+    List<PostResponse> getPostsByFilter(String filteredBy, String value);
 }
+

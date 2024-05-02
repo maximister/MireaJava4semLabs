@@ -1,7 +1,6 @@
 package ru.mirea.maximister.task14.service.post;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Qualifier;
 import ru.mirea.maximister.task14.dto.AddPostRequest;
 import ru.mirea.maximister.task14.dto.PostResponse;
 import ru.mirea.maximister.task14.dto.RemovePostRequest;
@@ -11,11 +10,10 @@ import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service("InMemoryPostService")
 public class InMemoryPostService implements PostService {
     private final PostRepository postRepository;
 
-    public InMemoryPostService(@Value("InMemoryPostRepo") PostRepository postRepository) {
+    public InMemoryPostService(@Qualifier("InMemoryPostRepo") PostRepository postRepository) {
         this.postRepository = postRepository;
     }
 
@@ -39,5 +37,10 @@ public class InMemoryPostService implements PostService {
     @Override
     public void deletePost(RemovePostRequest request) {
         postRepository.deletePost(request.id());
+    }
+
+    @Override
+    public List<PostResponse> getPostsByFilter(String filteredBy, String value) {
+        return null;
     }
 }

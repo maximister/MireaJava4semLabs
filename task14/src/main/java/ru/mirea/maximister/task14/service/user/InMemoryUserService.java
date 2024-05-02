@@ -1,8 +1,8 @@
 package ru.mirea.maximister.task14.service.user;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Qualifier;
 import ru.mirea.maximister.task14.dto.AddUserRequest;
+import ru.mirea.maximister.task14.dto.PostResponse;
 import ru.mirea.maximister.task14.dto.RemoveUserRequest;
 import ru.mirea.maximister.task14.dto.UserResponse;
 import ru.mirea.maximister.task14.repository.user.UserRepository;
@@ -11,11 +11,10 @@ import ru.mirea.maximister.task14.service.mappers.UserToUserResponseMapper;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service("InMemoryUserService")
 public class InMemoryUserService implements UserService {
     private final UserRepository userRepository;
 
-    public InMemoryUserService(@Value("InMemoryUserRepo") UserRepository userRepository) {
+    public InMemoryUserService(@Qualifier("InMemoryUserRepo") UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
@@ -39,5 +38,20 @@ public class InMemoryUserService implements UserService {
     @Override
     public void deleteUser(RemoveUserRequest request) {
         userRepository.deleteUser(request.id());
+    }
+
+    @Override
+    public List<PostResponse> getPosts(Long userId) {
+        return null;
+    }
+
+    @Override
+    public void addPostToUser(Long userId, Long postId) {
+
+    }
+
+    @Override
+    public List<UserResponse> getUsersBysFilter(String filteredBy, String value) {
+        return null;
     }
 }

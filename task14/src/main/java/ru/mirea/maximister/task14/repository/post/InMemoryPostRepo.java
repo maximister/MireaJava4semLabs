@@ -4,11 +4,11 @@ import org.springframework.stereotype.Repository;
 import ru.mirea.maximister.task14.domain.Post;
 import ru.mirea.maximister.task14.dto.AddPostRequest;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Repository("InMemoryPostRepo")
 public class InMemoryPostRepo implements PostRepository {
     private List<Post> posts = new ArrayList<>();
     private long ID = 0;
@@ -31,6 +31,7 @@ public class InMemoryPostRepo implements PostRepository {
         posts.add(Post.builder()
                 .text(addPostRequest.text())
                 .id(++ID)
+                .creationDate(OffsetDateTime.now())
                 .build()
         );
     }

@@ -1,3 +1,19 @@
 spring:
-    application:
-        name: task14
+  application:
+    name: task14
+  datasource:
+    url: jdbc:postgresql://localhost:5437/java_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+
+db-type: jpa
