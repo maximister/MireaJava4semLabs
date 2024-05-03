@@ -1,9 +1,9 @@
 package ru.mirea.maximister.task14.service.post;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import ru.mirea.maximister.task14.dto.AddPostRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemovePostRequest;
+import ru.mirea.maximister.task14.model.dto.AddPostRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemovePostRequest;
 import ru.mirea.maximister.task14.repository.post.PostRepository;
 import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
 

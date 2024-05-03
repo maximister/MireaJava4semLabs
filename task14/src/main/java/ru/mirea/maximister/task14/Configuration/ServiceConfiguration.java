@@ -4,7 +4,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import ru.mirea.maximister.task14.domain.User;
 import ru.mirea.maximister.task14.repository.post.InMemoryPostRepo;
 import ru.mirea.maximister.task14.repository.post.JpaPostRepository;
 import ru.mirea.maximister.task14.repository.post.PostRepository;

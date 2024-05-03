@@ -40,3 +40,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/task14/src/main/resources/templates/dir/

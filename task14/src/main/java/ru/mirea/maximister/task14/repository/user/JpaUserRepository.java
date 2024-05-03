@@ -1,7 +1,7 @@
 package ru.mirea.maximister.task14.repository.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.mirea.maximister.task14.domain.User;
+import ru.mirea.maximister.task14.model.domain.User;
 
 import java.util.Date;
 import java.util.List;

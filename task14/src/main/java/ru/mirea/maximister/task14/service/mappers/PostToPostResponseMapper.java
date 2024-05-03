@@ -1,8 +1,8 @@
 package ru.mirea.maximister.task14.service.mappers;
 
 import lombok.experimental.UtilityClass;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.dto.PostResponse;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
 
 @UtilityClass
 public class PostToPostResponseMapper {

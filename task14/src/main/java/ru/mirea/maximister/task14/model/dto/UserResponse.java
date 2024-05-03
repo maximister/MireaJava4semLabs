@@ -1,4 +1,4 @@
-package ru.mirea.maximister.task14.dto;
+package ru.mirea.maximister.task14.model.dto;
 
 import java.util.Date;
 

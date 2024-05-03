@@ -1,10 +1,9 @@
 package ru.mirea.maximister.task14.service.user;
 
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.dto.AddUserRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemoveUserRequest;
-import ru.mirea.maximister.task14.dto.UserResponse;
+import ru.mirea.maximister.task14.model.dto.AddUserRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemoveUserRequest;
+import ru.mirea.maximister.task14.model.dto.UserResponse;
 
 import java.util.List;
 

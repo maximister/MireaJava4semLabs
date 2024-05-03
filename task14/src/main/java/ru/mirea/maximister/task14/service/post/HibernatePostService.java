@@ -5,10 +5,10 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.dto.AddPostRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemovePostRequest;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.dto.AddPostRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemovePostRequest;
 import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
 
 import java.time.OffsetDateTime;

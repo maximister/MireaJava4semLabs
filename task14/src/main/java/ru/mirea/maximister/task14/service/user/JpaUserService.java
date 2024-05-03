@@ -1,12 +1,13 @@
 package ru.mirea.maximister.task14.service.user;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.domain.User;
-import ru.mirea.maximister.task14.dto.AddUserRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemoveUserRequest;
-import ru.mirea.maximister.task14.dto.UserResponse;
+import org.springframework.transaction.annotation.Transactional;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.domain.User;
+import ru.mirea.maximister.task14.model.dto.AddUserRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemoveUserRequest;
+import ru.mirea.maximister.task14.model.dto.UserResponse;
 import ru.mirea.maximister.task14.repository.post.JpaPostRepository;
 import ru.mirea.maximister.task14.repository.user.JpaUserRepository;
 import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
@@ -21,6 +22,7 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 @Slf4j
+@Transactional
 public class JpaUserService implements UserService {
     private final JpaUserRepository userRepository;
     private final JpaPostRepository postRepository;

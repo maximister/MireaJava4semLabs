@@ -5,12 +5,12 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.domain.User;
-import ru.mirea.maximister.task14.dto.AddUserRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemoveUserRequest;
-import ru.mirea.maximister.task14.dto.UserResponse;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.domain.User;
+import ru.mirea.maximister.task14.model.dto.AddUserRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemoveUserRequest;
+import ru.mirea.maximister.task14.model.dto.UserResponse;
 import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
 import ru.mirea.maximister.task14.service.mappers.UserToUserResponseMapper;
 

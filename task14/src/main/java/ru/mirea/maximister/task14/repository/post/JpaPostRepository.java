@@ -1,7 +1,7 @@
 package ru.mirea.maximister.task14.repository.post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.mirea.maximister.task14.domain.Post;
+import ru.mirea.maximister.task14.model.domain.Post;
 
 import java.util.List;
 

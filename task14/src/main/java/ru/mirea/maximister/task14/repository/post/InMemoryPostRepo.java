@@ -1,8 +1,7 @@
 package ru.mirea.maximister.task14.repository.post;
 
-import org.springframework.stereotype.Repository;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.dto.AddPostRequest;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.dto.AddPostRequest;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;

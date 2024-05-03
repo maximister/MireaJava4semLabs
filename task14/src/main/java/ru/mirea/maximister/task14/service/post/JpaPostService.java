@@ -1,10 +1,11 @@
 package ru.mirea.maximister.task14.service.post;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.mirea.maximister.task14.domain.Post;
-import ru.mirea.maximister.task14.dto.AddPostRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemovePostRequest;
+import org.springframework.transaction.annotation.Transactional;
+import ru.mirea.maximister.task14.model.domain.Post;
+import ru.mirea.maximister.task14.model.dto.AddPostRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemovePostRequest;
 import ru.mirea.maximister.task14.repository.post.JpaPostRepository;
 import ru.mirea.maximister.task14.service.mappers.PostToPostResponseMapper;
 
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Slf4j
+@Transactional
 public class JpaPostService implements PostService {
     private final JpaPostRepository postRepository;
 

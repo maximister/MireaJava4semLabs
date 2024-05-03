@@ -1,7 +1,7 @@
 package ru.mirea.maximister.task14.repository.user;
 
-import ru.mirea.maximister.task14.domain.User;
-import ru.mirea.maximister.task14.dto.AddUserRequest;
+import ru.mirea.maximister.task14.model.domain.User;
+import ru.mirea.maximister.task14.model.dto.AddUserRequest;
 
 import java.util.List;
 

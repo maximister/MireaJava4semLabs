@@ -1,4 +1,4 @@
-package ru.mirea.maximister.task14.domain;
+package ru.mirea.maximister.task14.model.domain;
 
 import jakarta.persistence.*;
 import lombok.*;

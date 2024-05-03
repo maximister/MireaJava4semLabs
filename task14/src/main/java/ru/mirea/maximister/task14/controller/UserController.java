@@ -1,11 +1,10 @@
 package ru.mirea.maximister.task14.controller;
 
-import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.mirea.maximister.task14.dto.AddUserRequest;
-import ru.mirea.maximister.task14.dto.PostResponse;
-import ru.mirea.maximister.task14.dto.RemoveUserRequest;
-import ru.mirea.maximister.task14.dto.UserResponse;
+import ru.mirea.maximister.task14.model.dto.AddUserRequest;
+import ru.mirea.maximister.task14.model.dto.PostResponse;
+import ru.mirea.maximister.task14.model.dto.RemoveUserRequest;
+import ru.mirea.maximister.task14.model.dto.UserResponse;
 import ru.mirea.maximister.task14.service.user.UserService;
 
 import java.util.List;
