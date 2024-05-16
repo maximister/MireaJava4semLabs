@@ -50,6 +50,6 @@ public class UserController {
 
     @GetMapping("/filtered")
     public List<UserResponse> getUsersByFilter(@RequestParam String filteredBy, @RequestParam String value) {
-        return userService.getUsersBysFilter(filteredBy, value);
+        return userService.getUsersByFilter(filteredBy, value);
     }
 }

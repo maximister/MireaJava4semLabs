@@ -51,6 +51,7 @@ public class JpaPostService implements PostService {
     }
 
     @Override
+    @Deprecated
     public List<PostResponse> getPostsByFilter(String filteredBy, String value) {
         log.info("getting posts by filter {} and value {}", filteredBy, value);
         switch (filteredBy) {

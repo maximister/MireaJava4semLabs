@@ -108,7 +108,7 @@ public class HibernateUserService implements UserService {
     }
 
     @Override
-    public List<UserResponse> getUsersBysFilter(String filteredBy, String value) {
+    public List<UserResponse> getUsersByFilter(String filteredBy, String value) {
         log.info("getting users by filter {} and value {}", filteredBy, value);
         CriteriaBuilder builder = session.getCriteriaBuilder();
         var criteria = builder.createQuery(User.class);

@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
@@ -48,7 +49,7 @@ public class DatabaseConfiguration {
         return sessionFactoryBean;
     }
 
-    @Bean
+    @Bean("transactionManager")
     public PlatformTransactionManager platformTransactionManager(LocalSessionFactoryBean factoryBean) {
         HibernateTransactionManager transactionManager = new HibernateTransactionManager();
         transactionManager.setSessionFactory(factoryBean.getObject());

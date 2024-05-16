@@ -32,4 +32,4 @@ db-type: hibernate
 application:
   emails: maximrevenko1@gmail.com
   mail:
-    enabled: true
+    enabled: false

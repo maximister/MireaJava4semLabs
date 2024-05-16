@@ -16,6 +16,6 @@ public interface UserService {
     List<PostResponse> getPosts(Long userId);
     void addPostToUser(Long userId, Long postId);
 
-    List<UserResponse> getUsersBysFilter(String filteredBy, String value);
+    List<UserResponse> getUsersByFilter(String filteredBy, String value);
 }
 

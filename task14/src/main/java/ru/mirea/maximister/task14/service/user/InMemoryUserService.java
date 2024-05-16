@@ -51,7 +51,7 @@ public class InMemoryUserService implements UserService {
     }
 
     @Override
-    public List<UserResponse> getUsersBysFilter(String filteredBy, String value) {
+    public List<UserResponse> getUsersByFilter(String filteredBy, String value) {
         return null;
     }
 }
